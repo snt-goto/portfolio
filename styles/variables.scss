@@ -1,0 +1,48 @@
+:root {
+  // color
+  --black: #000000;
+  --black-transparent-10: rgba(0, 0, 0, 0.1);
+  --black-transparent-20: rgba(0, 0, 0, 0.2);
+  --black-transparent-50: rgba(0, 0, 0, 0.5);
+  --black-transparent-80: rgba(0, 0, 0, 0.8);
+  --color-1: #e6e6e6;
+  --color-2: #333333;
+  --color-3: #aaaaaa;
+  --color-4: #666666;
+  --color-5: #dddddd;
+  --transparent: transparent;
+  --white: #ffffff;
+  --white-transparent-20: rgba(255, 255, 255, 0.2);
+  --white-transparent-50: rgba(255, 255, 255, 0.5);
+  --white-transparent-80: rgba(255, 255, 255, 0.8);
+
+  // font-family
+  --noto-sans-jp: 'Noto Sans JP', var(--sans-serif);
+  --oswald: 'Oswald', var(--sans-serif);
+  --sans-serif: sans-serif;
+  --serif: serif;
+
+  // margin, padding
+  --header-padding: 5rem 0;
+  --header-padding_mq-m: 4.5rem 0;
+  --header-padding_mq-xs: 4rem 0;
+  --label-mb_mq-m: 0.6rem;
+  --label-mr: 2.5rem;
+  --label-mr_mq-m: 2rem;
+  --input-padding: 0.5rem;
+
+  // width
+  --two-division: calc(100% / 2);
+  --two-column-1: calc((100% - 1rem) / 2);
+  --two-column-2: calc((100% - 2rem) / 2);
+  --two-column-3: calc((100% - 3rem) / 2);
+  --three-column-1: calc((100% - 1rem * 2) / 3);
+  --three-column-1_5: calc((100% - 1.5rem * 2) / 3);
+  --three-column-2: calc((100% - 2rem * 2) / 3);
+  --four-column-1_5: calc((100% - 1.5rem * 3) / 4);
+  --five-column-2: calc((100% - 2rem * 4) / 5);
+  --label-width: 15rem;
+  --label-width_mq-m: 13.5rem;
+}
+
+

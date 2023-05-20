@@ -1,0 +1,26 @@
+@import 'variables';
+
+body,
+html {
+  background-color: var(--color-1);
+  font-family: var(--sans-serif);
+  font-size: 16px;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 768px) {
+  body,
+  html {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 519px) {
+  body,
+  html {
+    font-size: 14px;
+  }
+}
