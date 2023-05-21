@@ -12,6 +12,10 @@ const MobileMenu = () => {
       menu: 'HOME'
     },
     {
+      href: '/#work',
+      menu: 'WORK'
+    },
+    {
       href: '/#service',
       menu: 'SERVICE'
     },
