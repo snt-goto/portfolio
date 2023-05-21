@@ -36,4 +36,4 @@ jobs:
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./out/
-          server-dir: /home/ivy-acoop/www/snt-goto.com/
+          server-dir: /home/snt-goto/www/snt-goto.com/
