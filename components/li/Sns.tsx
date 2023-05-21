@@ -10,7 +10,7 @@ interface Props {
 const Sns = ({ href, src }: Props) => {
   return (
     <li css={component}>
-      <a href={href}>
+      <a href={href} rel="noopener noreferrer" target="_blank">
         <img alt="" src={src} />
       </a>
     </li>
