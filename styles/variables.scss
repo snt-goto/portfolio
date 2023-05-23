@@ -1,5 +1,5 @@
 :root {
-  // color
+  // background-color, color
   --black: #000000;
   --black-transparent-10: rgba(0, 0, 0, 0.1);
   --black-transparent-20: rgba(0, 0, 0, 0.2);
@@ -10,9 +10,15 @@
   --color-3: #aaaaaa;
   --color-4: #666666;
   --color-5: #dddddd;
+  --radial-gradient-1: radial-gradient(
+    ellipse closest-side,
+    var(--color-1) 0%,
+    var(--transparent) 50%,
+    var(--color-1) 100%
+  );
   --transparent: transparent;
   --white: #ffffff;
-  --white-transparent-20: rgba(255, 255, 255, 0.2);
+  --white-transparent-20: rgba(137, 60, 60, 0.2);
   --white-transparent-50: rgba(255, 255, 255, 0.5);
   --white-transparent-80: rgba(255, 255, 255, 0.8);
 
