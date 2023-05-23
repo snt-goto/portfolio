@@ -48,7 +48,10 @@ const Header = ({}: Props) => {
     if (pathname === '/') {
       const elem = document.getElementById('logo');
 
-      elem!.style.opacity = '0';
+      elem!.style.cssText = `
+        opacity: 0;
+        pointer-events: none;
+      `;
 
       addEventListener('scroll', () => {
         const height = window.outerHeight,
@@ -57,9 +60,15 @@ const Header = ({}: Props) => {
         if (scroll <= height) {
           const ratio = Number((scroll / height).toFixed(2));
 
-          ratio <= 0.5 ? (elem!.style.opacity = String(ratio * 2)) : '';
+          elem!.style.cssText = `
+            opacity: ${String(ratio)};
+            pointer-events: none;
+          `;
         } else {
-          elem!.style.opacity = '1';
+          elem!.style.cssText = `
+            opacity: 1;
+            pointer-events: auto;
+          `;
         }
       });
     }
@@ -75,7 +84,7 @@ const Header = ({}: Props) => {
                 <img alt="GOTO SHUNTA" src="/img/logo.svg" />
               </Link>
               <div css={nav}>
-                <ul css={ulCss}>
+                <ul>
                   {headerNavItems.map((i, n) => {
                     return <HeaderNav href={i.href} key={n} menu={i.menu} />;
                   })}
@@ -159,18 +168,6 @@ const aCss = css`
   ${mq.xs} {
     width: 12rem;
   }
-`;
-
-const ulCss = css`
-  /* bottom: 0;
-  list-style: none;
-  pointer-events: auto;
-  position: absolute;
-  right: 0;
-
-  ${mq.s} {
-    display: none;
-  } */
 `;
 
 export default Header;
