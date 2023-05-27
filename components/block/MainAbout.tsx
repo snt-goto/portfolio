@@ -25,7 +25,7 @@ const MainAbout = ({}: Props) => {
       time: '2020年10月'
     },
     {
-      event: 'Web制作IT企業に入社',
+      event: 'Web系IT企業に入社',
       time: '2021年04月'
     },
     {
