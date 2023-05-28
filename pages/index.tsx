@@ -10,7 +10,6 @@ const Home: NextPage<Props> = ({}: Props) => {
     <>
       <Layout>
         <MainVisual />
-        <MainWork />
         <MainService />
         <MainPrice />
         <MainAbout />
