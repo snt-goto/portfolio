@@ -5,17 +5,15 @@ import { Main, MaxWidth, Wrap } from 'components/frame';
 import { Work } from 'components/li';
 import { MainTit } from 'components/tit';
 
-interface Props {}
+interface Props {
+  latestWorkItems: {
+    src: string;
+    tit: string;
+    url: string;
+  }[];
+}
 
-const MainWork = ({}: Props) => {
-  const workItems = [
-    {
-      href: 'https://snt-goto.com/',
-      src: '/img/work_1.jpg',
-      tit: 'GOTO SHUNTA PORTFOLIO'
-    }
-  ];
-
+const MainWork = ({ latestWorkItems }: Props) => {
   return (
     <Main>
       <div css={component} id="work">
@@ -24,8 +22,8 @@ const MainWork = ({}: Props) => {
             <MainTit en="WORK" ja="実績" />
             <ScrollAnim>
               <ul css={ulCss}>
-                {workItems.map((i, n) => {
-                  return <Work href={i.href} key={n} src={i.src} tit={i.tit} />;
+                {latestWorkItems.map((i, n) => {
+                  return <Work href={i.url} key={n} src={i.src} tit={i.tit} />;
                 })}
               </ul>
             </ScrollAnim>
