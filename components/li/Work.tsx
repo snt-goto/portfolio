@@ -35,6 +35,7 @@ const component = css`
 
   & > a {
     display: block;
+    overflow: hidden;
     padding-bottom: 75%;
     position: relative;
     text-decoration: none;
@@ -55,12 +56,21 @@ const component = css`
       text-decoration: none;
 
       &::after {
-        background-color: var(--black-transparent-80);
+        background-color: var(--black-transparent-60);
+      }
+
+      & img {
+        transform: scale(1.1);
       }
 
       & > p {
         opacity: 1;
       }
+    }
+
+    & img {
+      transition-duration: 0.3s;
+      transition-timing-function: ease-in-out;
     }
 
     & > p {
