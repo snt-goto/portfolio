@@ -23,17 +23,15 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
 
 const Home: NextPage<Props> = ({ latestWorkItems }: Props) => {
   return (
-    <>
-      <Layout>
-        <MainVisual />
-        <MainWork latestWorkItems={latestWorkItems} />
-        <MainService />
-        <MainPrice />
-        <MainAbout />
-        <MainSkill />
-        <MainContact />
-      </Layout>
-    </>
+    <Layout>
+      <MainVisual />
+      <MainWork latestWorkItems={latestWorkItems} />
+      <MainService />
+      <MainPrice />
+      <MainAbout />
+      <MainSkill />
+      <MainContact />
+    </Layout>
   );
 };
 
