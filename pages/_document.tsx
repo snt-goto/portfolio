@@ -5,7 +5,7 @@ import config from 'config';
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html lang="ja">
       <Head>
         {/* favicon */}
         <link rel="apple-touch-icon" sizes="180x180" href="/img/ico/apple-touch-icon.png" />
