@@ -5,7 +5,7 @@ interface Props {
   tit?: string;
 }
 
-const Ogp = ({ tit }: Props) => {
+const Hd = ({ tit }: Props) => {
   const description =
       '群馬県でWebクリエイターとして活動している、「後藤 駿太」のポートフォリオサイトです。私はクライアント様の想いを汲み取って、「あなただけのWebサイト」を真心込めて制作しております。お気軽にお問い合わせください。',
     siteName = 'GOTO SHUNTA PORTFOLIO';
@@ -36,4 +36,4 @@ const Ogp = ({ tit }: Props) => {
   );
 };
 
-export default Ogp;
+export default Hd;
