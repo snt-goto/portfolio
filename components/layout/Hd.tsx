@@ -26,7 +26,7 @@ const Hd = ({ tit }: Props) => {
         </title>
         <meta name="description" content={description} />
         <meta property="og:description" content={description} />
-        <meta property="og:image" content="/img/top/main_visual_bg.jpg" />
+        <meta property="og:image" content="/img/main_about.jpg" />
         <meta property="og:title" content={`${tit ? `${tit} | ` : ''}${siteName}`} />
         <meta property="og:type" content={pathname === '/' ? 'website' : 'article'} />
         <meta property="og:url" content={url} />
