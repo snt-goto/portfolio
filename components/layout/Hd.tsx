@@ -10,11 +10,13 @@ const Ogp = ({ tit }: Props) => {
       '群馬県でWebクリエイターとして活動している、「後藤 駿太」のポートフォリオサイトです。私はクライアント様の想いを汲み取って、「あなただけのWebサイト」を真心込めて制作しております。お気軽にお問い合わせください。',
     siteName = 'GOTO SHUNTA PORTFOLIO';
 
-  const [url, setUrl] = useState('');
+  const [pathname, setPathname] = useState(''),
+    [url, setUrl] = useState('');
 
   useEffect(() => {
+    setPathname(location.pathname);
     setUrl(location.href);
-  }, [url]);
+  }, [pathname, url]);
 
   return (
     <>
@@ -22,13 +24,13 @@ const Ogp = ({ tit }: Props) => {
         <title>
           {tit ? `${tit} |` : ''} {siteName}
         </title>
-        <meta content={description} name="description" />
-        <meta content={description} property="og:description" />
-        <meta content="/img/top/main_visual_bg.jpg" property="og:image" />
-        <meta content={`${tit ? `${tit} | ` : ''}${siteName}`} property="og:title" />
-        <meta content={url === '/' ? 'website' : 'article'} property="og:type" />
-        <meta content={url} property="og:url" />
-        <link href={url} rel="canonical" />
+        <meta name="description" content={description} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content="/img/top/main_visual_bg.jpg" />
+        <meta property="og:title" content={`${tit ? `${tit} | ` : ''}${siteName}`} />
+        <meta property="og:type" content={pathname === '/' ? 'website' : 'article'} />
+        <meta property="og:url" content={url} />
+        <link rel="canonical" href={url} />
       </Head>
     </>
   );
