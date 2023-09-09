@@ -91,22 +91,21 @@ const component = css`
 
 const btn = css`
   cursor: pointer;
-  height: calc(2.6rem * 0.4);
+  height: calc(2.7rem * 0.3);
   position: relative;
-  width: 2.6rem;
+  width: 2.7rem;
   z-index: 999;
 
   &.open {
     & > span {
       &:nth-child(1) {
         top: 50%;
-        transform: rotate(15deg) translateY(50%);
+        transform: rotate(15deg) translateY(-50%);
       }
 
       &:nth-child(2) {
-        top: 50%;
         transform: rotate(-15deg) translateY(50%);
-        bottom: auto;
+        bottom: 50%;
       }
     }
   }
