@@ -40,6 +40,10 @@ const MainPrice = ({}: Props) => {
     {
       menu: '既存サイトレスポンジブ化',
       price: 100000
+    },
+    {
+      menu: 'kintoneアプリ開発',
+      price: 30000
     }
   ];
 

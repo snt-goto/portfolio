@@ -39,6 +39,8 @@ const component = css`
 `;
 
 const ulCss = css`
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
 `;
 

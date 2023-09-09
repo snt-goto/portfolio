@@ -18,6 +18,11 @@ const MainService = ({}: Props) => {
       cont: '「EC-CUBE」というプラットフォームを利用したECサイトの構築を行っております。お客様のご希望に合ったテーマの選定とカスタマイズなど、柔軟にご対応いたします。',
       src: '/img/ec.svg',
       tit: 'ECサイト制作'
+    },
+    {
+      cont: '「kintone」というノーコードツールを利用したアプリ開発を行っております。また、「JavaScript」を利用して、オリジナルアプリを作成することも可能です。',
+      src: '/img/ec.svg',
+      tit: 'kintoneアプリ開発'
     }
   ];
 
